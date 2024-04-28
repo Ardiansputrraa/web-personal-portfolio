@@ -1,0 +1,438 @@
+{% include "head.html" %} 
+  <body>
+    {% include "header.html" %} 
+    <main id="main">
+      <!-- ======= Breadcrumbs Section ======= -->
+      <section class="breadcrumbs">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <h2>Portfolio Details</h2>
+            <ol>
+              <li><a href="/#hero">Home</a></li>
+              <li><a href="/#portfolio">Portfolio</a></li>
+              <li>{{ portfolio.split('_')[0] }}  {{ portfolio.split('_')[1] }}</li>
+            </ol>
+          </div>
+        </div>
+      </section>
+      <!-- Breadcrumbs Section -->
+
+      {% if portfolio == 'Bersama_Zakat' %}
+      <!-- ======= Portfolio Details Section ======= -->
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/portofolio-bersama-zakat-app.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/bersama-zakat-1.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/bersama-zakat-2.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/bersama-zakat-3.png"
+                      alt=""
+                    />
+                  </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category</strong>: Android Application</li>
+                  <li><strong>Programming</strong>: Kotlin</li>
+                  <li><strong>Client</strong>: Universitas YARSI</li>
+                  <li><strong>Method</strong>: Scrum</li>
+                  <li>
+                    <strong>Figma URL</strong>:
+                    <a href="https://www.figma.com/file/HNhoK6E731dyYa8gS00cGW/Zakat-App?type=design&node-id=9%3A2&mode=design&t=tUU3OXtL7mCHeDnM-1">https://www.figma.com</a>
+                  </li>
+                  <li>
+                    <strong>Github URL</strong>:
+                    <a href="https://github.com/Ardiansputrraa/Bersama-Zakat-App">https://github.com/Ardiansputrraa</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="portfolio-description">
+                <h2>Description</h2>
+                <p>
+                  "Bersama Zakat" application is an application created at the client's request, 
+                  where we extract each user story from each interview of the resource person as a potential user of this application. 
+                  in developing this application we use the scrum methodology, this application has zakat calculation features, 
+                  such as zakat fitrah, profession, gold, livestock, agriculture, fisheries, 
+                  apart from that this application is equipped with an understanding of the science of zakat and also several references from a point of view.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- End Portfolio Details Section -->
+      {% elif portfolio == 'Movie_Pedia'%}
+      <!-- ======= Portfolio Details Section ======= -->
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/portofolio-web-spartapedia.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/spartapedia-1.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/spartapedia-2.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/spartapedia-3.png"
+                      alt=""
+                    />
+                  </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category</strong>: Website</li>
+                  <li><strong>Programming</strong>: HTML5, Bootstrap, CSS, JavaScript, JQuery, AJAX, Python</li>
+                  <li><strong>Framework</strong>: Flask</li>
+                  <li><strong>Database</strong>: MongoDB</li>
+                  <li>
+                    <strong>Project URL</strong>:
+                    <a href="https://spartapedia-project-by-github-ardiansputrraa.glitch.me/">https://spartapedia-project-by-github-ardiansputrraa.glitch.me/</a>
+                  </li>
+                  <li>
+                    <strong>Github URL</strong>:
+                    <a href="https://github.com/Ardiansputrraa/Spartapedia.git">https://github.com/Ardiansputrraa</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="portfolio-description">
+                <h2>Description</h2>
+                <p>
+                  Spartapedia is an intriguing website that delves into the world of cinema. 
+                  It serves as a comprehensive repository of information about various films. 
+                  Users can input a film link, and in return, they receive detailed insights about the movie. 
+                </p>
+                <p>
+                  User-Submitted Links: Users can contribute by submitting links to films they want information about. 
+                  Spartapedia then processes these links and extracts relevant data to create informative pages.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {% elif portfolio == 'Task_Kolaboratif'%}
+      <!-- ======= Portfolio Details Section ======= -->
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/portofolio-to-do-kolaboratif-app.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/task-kolaboratif-1.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/task-kolaboratif-2.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/task-kolaboratif-3.png"
+                      alt=""
+                    />
+                  </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category</strong>: Android Application</li>
+                  <li><strong>Programming</strong>: Kotlin</li>
+                  <li><strong>Database</strong>: Firebase</li>
+                  <li><strong>Client</strong>: Universitas YARSI</li>
+                  <li>
+                    <strong>Github URL</strong>:
+                    <a href="https://github.com/Ardiansputrraa/To-Do-Kolaboratif.git">https://github.com/Ardiansputrraa</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="portfolio-description">
+                <h2>Description</h2>
+                <p>Task Kolaboratif is a simple and easy-to-use application that helps you manage tasks 
+                  and collaborate with others. You can create, edit, and share your to-do lists with friends, 
+                  family, or coworkers. You can also organize tasks, set time frames, and track progress. 
+                  Tasky is built with Kotlin, a modern and concise programming language that runs on the Android platform.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {% elif portfolio == 'Personal_Diary'%}
+      <!-- ======= Portfolio Details Section ======= -->
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/portofolio-web-personal-diary.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/personal-diary-1.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/personal-diary-2.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/personal-diary-3.png"
+                      alt=""
+                    />
+                  </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category</strong>: Website</li>
+                  <li><strong>Programming</strong>: HTML5, Bootstrap, CSS, JavaScript, JQuery, AJAX, Python</li>
+                  <li><strong>Framework</strong>: Flask</li>
+                  <li><strong>Database</strong>: MongoDB</li>
+                  <li>
+                    <strong>Project URL</strong>:
+                    <a href="https://personal-diary-project-by-github-ardiansputrraa.glitch.me/">https://personal-diary-project-by-github-ardiansputrraa.glitch.me/</a>
+                  </li>
+                  <li>
+                    <strong>Github URL</strong>:
+                    <a href="https://github.com/Ardiansputrraa/Personal-Diary.git">https://github.com/Ardiansputrraa</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="portfolio-description">
+                <h2>Description</h2>
+                <p>
+                  The Personal Diary website is a platform that allows users to store memories, 
+                  photos and provide information for every moment they want to immortalize
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {% elif portfolio == 'Watching_Movie'%}
+      <!-- ======= Portfolio Details Section ======= -->
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/portofolio-movie-app.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/watching-movie-1.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/watching-movie-2.png"
+                      alt=""
+                    />
+                  </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category</strong>: Android Application</li>
+                  <li><strong>Programming</strong>: Kotlin</li>
+                  <li>
+                    <strong>Github URL</strong>:
+                    <a href="https://github.com/Ardiansputrraa/Watching-Movie.git">https://github.com/Ardiansputrraa</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="portfolio-description">
+                <h2>Description</h2>
+                <p>
+                  Watching Movie is an application that is made like a service for watching a 
+                  film that has been provided by the application service, and can adjust the 
+                  quality level of a video. This application connects YouTube videos with our 
+                  application via a link that we can set and adjust to the video we want. input.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {% elif portfolio == 'Admin_Panel'%}
+      <!-- ======= Portfolio Details Section ======= -->
+      <section id="portfolio-details" class="portfolio-details">
+        <div class="container">
+          <div class="row gy-4">
+            <div class="col-lg-8">
+              <div class="portfolio-details-slider swiper">
+                <div class="swiper-wrapper align-items-center">
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/portofolio-web-admin-panel.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/admin-panel-1.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/admin-panel-2.png"
+                      alt=""
+                    />
+                  </div>
+
+                  <div class="swiper-slide">
+                    <img
+                      src="../static/assets/img/portfolio/admin-panel-3.png"
+                      alt=""
+                    />
+                  </div>
+
+                </div>
+                <div class="swiper-pagination"></div>
+              </div>
+            </div>
+
+            <div class="col-lg-4">
+              <div class="portfolio-info">
+                <h3>Project information</h3>
+                <ul>
+                  <li><strong>Category</strong>: Website</li>
+                  <li><strong>Programming</strong>: HTML5, Bootstrap, CSS, JavaScript, JQuery, AJAX, Python</li>
+                  <li><strong>Framework</strong>: Flask</li>
+                  <li><strong>Database</strong>: MongoDB</li>
+                  <li>
+                    <strong>Project URL</strong>:
+                    <a href="https://admin-panel-project-by-gitub-ardiansputrraa.glitch.me/">https://admin-panel-project-by-gitub-ardiansputrraa.glitch.me/</a>
+                  </li>
+                  <li>
+                    <strong>Github URL</strong>:
+                    <a href="https://github.com/Ardiansputrraa/Admin-Panel.git">https://github.com/Ardiansputrraa</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="portfolio-description">
+                <h2>Description</h2>
+                <p>
+                  The Personal Diary website is a platform that allows users to store memories, 
+                  photos and provide information for every moment they want to immortalize
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {% endif %}
+    </main>
+    <!-- End #main -->
+    {% include "footer.html" %} 
